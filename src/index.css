@@ -1,0 +1,141 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.maind{
+  width: 100;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1505533542167-8c89838bb19e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.center_div{
+  width: 40%;
+  height: 70vh;
+  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+  overflow: hidden;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0, 0.5);
+  border-radius:35px;
+
+  margin-top: -200px;
+}
+
+.heading{
+  color: white;
+  background: transparent;
+  background-image: url('https://www.desktopbackground.org/p/2011/11/23/301566_beautiful-hd-wallpapers-weather-and-phenomena-backgrounds_1920x1080_h.jpg');
+  padding: 6px 0 2px 0;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0, 0.3);
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 25px;
+}
+.avgtemp{
+color: rgb(84, 5, 187);
+margin-bottom: 40px;
+}
+.mintemp{
+  color: blue;
+  display: inline;
+  width :10px;
+}
+.changekaro{
+  color: red;
+}
+
+.cityname{
+  color: blue;
+
+  margin-bottom: 40px;
+  margin-top: -60px;
+
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Arvo', serif;
+
+
+
+}.found{
+  color: red;
+  font-family: 'Fjalla One', sans-serif;
+
+  margin-bottom: 40px;
+  margin-top: 130px;
+}
+
+input{
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background:lightcyan;
+  font-size: 20px;
+  font-weight: 500;
+  width: 80%;
+  border-bottom: 2px solid #8566aa;
+  outline: none;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: blue;
+  font-size: large;
+  color: black;
+}
+.info{
+padding: 140px;
+}
+
+.ocean {
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 3050px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
+
+
